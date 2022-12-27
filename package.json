@@ -1,0 +1,20 @@
+{
+  "name": "react-training",
+  "version": "1.0.0",
+  "description": "Training material for react development.",
+  "main": "index.js",
+  "scripts": {
+    "playground": "cd playground && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surajverma2587/react-training.git"
+  },
+  "keywords": [],
+  "author": "Suraj Verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surajverma2587/react-training/issues"
+  },
+  "homepage": "https://github.com/surajverma2587/react-training#readme"
+}
