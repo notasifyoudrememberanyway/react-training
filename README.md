@@ -9,6 +9,7 @@
 - What is JSX
 - What is a component
 - What are props
+- Render lists
 
 ## Day 2
 
@@ -17,7 +18,6 @@
 - React lifecycle
 - Event handling
 - Conditional rendering
-- Render lists
 
 ## Day 3
 
