@@ -111,7 +111,7 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .about-me-container {
     flex-direction: column;
   }

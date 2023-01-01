@@ -1,4 +1,48 @@
+import { ProjectCard } from "./ProjectCard";
+
 import weatherApp from "../images/weather-app.jpg";
+import passwordGenerator from "../images/password-generator.jpg";
+import gitHubSearch from "../images/github-search.jpg";
+import workoutTracker from "../images/workout-tracker.jpg";
+
+const projects = [
+  {
+    title: "Password Generator",
+    gitHubUrl: "#",
+    appUrl: "#",
+    image: {
+      src: passwordGenerator,
+      alt: "number padlock on a keyboard",
+    },
+  },
+  {
+    title: "GitHub Search",
+    gitHubUrl: "#",
+    appUrl: "#",
+    image: {
+      src: gitHubSearch,
+      alt: "search engine app for GitHub",
+    },
+  },
+  {
+    title: "Weather Dashboard",
+    gitHubUrl: "#",
+    appUrl: "#",
+    image: {
+      src: weatherApp,
+      alt: "cyclone weather",
+    },
+  },
+  {
+    title: "Workout Tracker",
+    gitHubUrl: "#",
+    appUrl: "#",
+    image: {
+      src: workoutTracker,
+      alt: "various gym equipments",
+    },
+  },
+];
 
 export const Projects = () => {
   return (
@@ -10,119 +54,9 @@ export const Projects = () => {
         </h2>
         <hr />
         <div className="projects-container">
-          <div className="card project-card">
-            <img
-              src={weatherApp}
-              className="card-img-top project-card-image"
-              alt="weather forecast application"
-            />
-            <div className="card-body text-center">
-              <h3 className="card-title fs-4">Weather Dashboard</h3>
-              <div className="card-links-container">
-                <a href="#" className="card-links-icon">
-                  <i className="fa-solid fa-globe"></i>
-                </a>
-                <a href="#" className="card-links-icon">
-                  <i className="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="card project-card">
-            <img
-              src={weatherApp}
-              className="card-img-top project-card-image"
-              alt="weather forecast application"
-            />
-            <div className="card-body text-center">
-              <h3 className="card-title fs-4">Weather Dashboard</h3>
-              <div className="card-links-container">
-                <a href="#" className="card-links-icon">
-                  <i className="fa-solid fa-globe"></i>
-                </a>
-                <a href="#" className="card-links-icon">
-                  <i className="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="card project-card">
-            <img
-              src={weatherApp}
-              className="card-img-top project-card-image"
-              alt="weather forecast application"
-            />
-            <div className="card-body text-center">
-              <h3 className="card-title fs-4">Weather Dashboard</h3>
-              <div className="card-links-container">
-                <a href="#" className="card-links-icon">
-                  <i className="fa-solid fa-globe"></i>
-                </a>
-                <a href="#" className="card-links-icon">
-                  <i className="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="card project-card">
-            <img
-              src={weatherApp}
-              className="card-img-top project-card-image"
-              alt="weather forecast application"
-            />
-            <div className="card-body text-center">
-              <h3 className="card-title fs-4">Weather Dashboard</h3>
-              <div className="card-links-container">
-                <a href="#" className="card-links-icon">
-                  <i className="fa-solid fa-globe"></i>
-                </a>
-                <a href="#" className="card-links-icon">
-                  <i className="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="card project-card">
-            <img
-              src={weatherApp}
-              className="card-img-top project-card-image"
-              alt="weather forecast application"
-            />
-            <div className="card-body text-center">
-              <h3 className="card-title fs-4">Weather Dashboard</h3>
-              <div className="card-links-container">
-                <a href="#" className="card-links-icon">
-                  <i className="fa-solid fa-globe"></i>
-                </a>
-                <a href="#" className="card-links-icon">
-                  <i className="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="card project-card">
-            <img
-              src={weatherApp}
-              className="card-img-top project-card-image"
-              alt="weather forecast application"
-            />
-            <div className="card-body text-center">
-              <h3 className="card-title fs-4">Weather Dashboard</h3>
-              <div className="card-links-container">
-                <a href="#" className="card-links-icon">
-                  <i className="fa-solid fa-globe"></i>
-                </a>
-                <a href="#" className="card-links-icon">
-                  <i className="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+          {projects.map((project) => (
+            <ProjectCard {...project} key={project.title} />
+          ))}
         </div>
       </div>
     </div>
