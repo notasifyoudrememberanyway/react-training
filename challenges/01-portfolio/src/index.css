@@ -1,0 +1,123 @@
+:root {
+  --isabelline: #edede9ff;
+  --pale-silver: #d6ccc2ff;
+  --linen: #f5ebe0ff;
+  --champagne-pink: #e3d5caff;
+  --desert-sand: #d5bdafff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--isabelline);
+}
+
+.section-container {
+  padding: 20px 10px;
+}
+
+.about-me {
+  background-color: var(--champagne-pink);
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-me-image {
+  flex: 1;
+  border: 12px solid var(--isabelline);
+  border-radius: 8px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about-me-info {
+  flex: 2;
+  padding: 0px 20px;
+}
+
+.info {
+  margin: 20px 0px;
+  line-height: 32px;
+  text-align: justify;
+}
+
+.contact-links-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.contact-icon {
+  color: inherit;
+  font-size: 32px;
+}
+
+.projects {
+  background-color: var(--pale-silver);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  width: 18rem;
+  margin: 20px;
+}
+
+.project-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 16px;
+}
+
+.card-links-icon {
+  color: inherit;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 0px 10px;
+}
+
+.contact-me {
+  background-color: var(--desert-sand);
+}
+
+.jumbotron {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .about-me-image,
+  .about-me-info {
+    margin-bottom: 20px;
+  }
+}
