@@ -1,5 +1,10 @@
+/**
+ *
+ * jQuery
+ */
+
 // function that creates the elements for a Jumbotron using jQuery
-const renderJumbotron = () => {
+const createJumbotron = () => {
   const titleDiv = $("<div/>").addClass("title").text("Hello, jQuery!!");
 
   const subTitleDiv = $("<div/>")
@@ -14,10 +19,18 @@ const renderJumbotron = () => {
 };
 
 // target the div you want to append the elements created using jQuery
-const jQueryContainer = $(document.getElementById("jquery-root"));
+const jQueryContainer = $("#jquery-root");
+
+// create a jumbotron component to append to the jQueryContainer
+const jQueryJumbotron = createJumbotron();
 
 // append the jQuery created elements to the div
-jQueryContainer.append(renderJumbotron());
+jQueryContainer.append(jQueryJumbotron);
+
+/**
+ *
+ * React
+ */
 
 // function that creates the elements for a Jumbotron using React
 const Jumbotron = () => {
@@ -47,5 +60,8 @@ const reactContainer = document.getElementById("root");
 // use ReactDOM to create a root element which will hold your entire React application
 const root = ReactDOM.createRoot(reactContainer);
 
+// create a jumbotron component to append to the root
+const reactJumbotron = Jumbotron();
+
 // render the application in the root element
-root.render(Jumbotron());
+root.render(reactJumbotron);
