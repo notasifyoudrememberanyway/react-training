@@ -80,12 +80,12 @@ You should see a webpage open in your default browser on http://localhost:3000/ 
 - What is JSX?
 - What is a component?
 - What are props?
+- How to render many components?
 
 ---
 
 #### Day 2
 
-- How to render many components?
 - Class-based components
 - What is state?
 - React component lifecycle

@@ -17,6 +17,7 @@ const Jumbotron = () => {
 };
 
 const reactContainer = document.getElementById("root");
+
 const root = ReactDOM.createRoot(reactContainer);
 
 root.render(<Jumbotron />);
