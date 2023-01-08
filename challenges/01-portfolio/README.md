@@ -32,4 +32,4 @@ Please use this wireframe as a guide for your portfolio and you are free to choo
 
 ## Example Portfolio
 
-![example portfolio](./sample-portfolio.png)
+![example portfolio](./portfolio.png)
