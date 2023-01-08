@@ -4,6 +4,7 @@
   "description": "Training material for react development.",
   "main": "index.js",
   "scripts": {
+    "init": "npm install && cd playground && npm install",
     "playground": "cd playground && npm run start"
   },
   "repository": {

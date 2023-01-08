@@ -48,10 +48,10 @@ cd react-training
 
 ---
 
-Install the dependencies and run the playground
+Install the dependencies for the react playground and run the playground. Please note that `npm run init` is a custom script that installs all the dependencies required by React in the `playground` directory.
 
 ```
-npm install
+npm run init
 npm run playground
 ```
 
