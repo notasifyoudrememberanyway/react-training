@@ -114,25 +114,33 @@ You should see a webpage open in your default browser on http://localhost:3000/ 
 
 #### Day 1
 
-- TODO
-
----
+- useEffect hook
+- API call using fetch or axios
+- env files for secrets
+- github search application
 
 #### Day 2
 
-- TODO
+- local storage in React
+- custom hook
+- debounce hook
+- weather dashboard
 
 ---
 
 #### Day 3
 
-- TODO
+- weather dashboard (contd)
+- React router v6
+- React router url and query params
+- React router error page
 
 ---
 
 #### Day 4
 
-- TODO
+- to do application
+- CRUD operations for to do application
 
 ---
 
@@ -142,25 +150,31 @@ You should see a webpage open in your default browser on http://localhost:3000/ 
 
 #### Day 1
 
-- TODO
+- deploy a react application github pages
+- host a react application using vercel
+- useContext hook
+- useReducer hook
 
 ---
 
 #### Day 2
 
-- TODO
+- forms using formik
+- form validation using Yup
+- shopping cart application
 
 ---
 
 #### Day 3
 
-- TODO
+- shopping cart application (contd)
 
 ---
 
 #### Day 4
 
-- TODO
+- React testing library
+- stripe payment using React
 
 ## Resources
 
