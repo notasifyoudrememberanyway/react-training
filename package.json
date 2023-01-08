@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/surajverma2587/react-training.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "learn react",
+    "coding bootcamp",
+    "react examples"
+  ],
   "author": "Suraj Verma",
   "license": "ISC",
   "bugs": {
