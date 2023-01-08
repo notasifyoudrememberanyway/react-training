@@ -31,7 +31,7 @@ As a user I want to be able to count the number of words in a given snippet of t
 
 Please use this high level wireframe as a guide for your portfolio and you are free to choose your own colours and/or layout if needed.
 
-![wireframe diagram](./react_portfolio.drawio.png)
+![wireframe diagram](./word-counter.drawio.png)
 
 ## Example Application
 

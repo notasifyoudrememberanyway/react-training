@@ -28,7 +28,7 @@ I want to present my professional react portfolio to potential employers in the 
 
 Please use this wireframe as a guide for your portfolio and you are free to choose your own colours and/or layout if needed.
 
-![wireframe diagram](./react_portfolio.drawio.png)
+![wireframe diagram](./react-portfolio.drawio.png)
 
 ## Example Portfolio
 
