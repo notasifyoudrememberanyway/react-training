@@ -21,7 +21,11 @@ export const App = () => {
       {/* a comment in JSX */}
       {languages.map((language) => {
         return (
-          <Jumbotron title={language.title} subTitle={language.subTitle} />
+          <Jumbotron
+            title={language.title}
+            subTitle={language.subTitle}
+            key={language.title}
+          />
         );
       })}
     </div>
