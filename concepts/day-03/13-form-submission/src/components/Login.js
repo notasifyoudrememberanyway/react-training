@@ -2,9 +2,10 @@ import { useState } from "react";
 
 import { FormTitle } from "./FormTitle";
 
-export const Login = ({ title, handleLogin, error }) => {
+export const Login = ({ title, onSuccess, onFailure }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleChange = ({ currentTarget }) => {
     if (currentTarget.name === "email") {
@@ -19,9 +20,16 @@ export const Login = ({ title, handleLogin, error }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const formData = { email, password };
-
-    handleLogin(formData);
+    if (!email || !password) {
+      setError("Please enter an email and password");
+      onFailure();
+    } else if (email === "bob.smith@email.com" && password === "Password123!") {
+      setError("");
+      onSuccess();
+    } else {
+      setError("Invalid credentials, please try again.");
+      onFailure();
+    }
   };
 
   return (
@@ -34,7 +42,6 @@ export const Login = ({ title, handleLogin, error }) => {
             Email Address
           </label>
           <input
-            required
             name="email"
             type="email"
             id="email"
@@ -51,7 +58,6 @@ export const Login = ({ title, handleLogin, error }) => {
             Password
           </label>
           <input
-            required
             name="password"
             type="password"
             id="password"
@@ -63,8 +69,8 @@ export const Login = ({ title, handleLogin, error }) => {
         </div>
 
         {/* submit button */}
-        <div className="text-center pt-4">
-          <button className="btn btn-success w-100" type="submit">
+        <div class="d-grid gap-2 col-6 mx-auto pt-4">
+          <button className="btn btn-success" type="submit">
             Submit
           </button>
         </div>

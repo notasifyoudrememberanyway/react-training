@@ -5,31 +5,23 @@ import { Jumbotron } from "./components/Jumbotron";
 
 export const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [error, setError] = useState("");
 
-  const handleLogin = (formData) => {
-    console.log("login form submitted", formData);
+  const onSuccess = () => {
+    setIsLoggedIn(true);
+  };
 
-    if (
-      formData.email === "bob.smith@email.com" &&
-      formData.password === "Password123!"
-    ) {
-      setIsLoggedIn(true);
-      setError("");
-    } else {
-      setIsLoggedIn(false);
-      setError("Invalid credentials, please try again.");
-    }
+  const onFailure = () => {
+    setIsLoggedIn(false);
   };
 
   return (
     <div className="container app">
       {!isLoggedIn ? (
-        <Login title="Login" handleLogin={handleLogin} error={error} />
+        <Login title="Login" onSuccess={onSuccess} onFailure={onFailure} />
       ) : (
         <Jumbotron
-          title="Hello, React!!"
-          subTitle="This banner element is rendered using React and CSS."
+          title="Bob Smith"
+          subTitle="Hello, you are now authorised to use the website."
         />
       )}
     </div>
