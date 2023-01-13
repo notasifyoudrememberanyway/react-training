@@ -57,7 +57,7 @@ npm run playground
 
 You should see a webpage open in your default browser on http://localhost:3000/ like this
 
-![playground](./react-playground.png)
+![playground](./assets/react-playground.png)
 
 ## Running the playground
 
