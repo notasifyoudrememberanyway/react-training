@@ -15,8 +15,6 @@ export const App = () => {
     setWords(randomWords);
   }, []);
 
-  console.log(words);
-
   return (
     <div className="container">
       <Jumbotron />

@@ -70,7 +70,7 @@ export const App = () => {
   };
 
   return (
-    <main className="container">
+    <div className="container">
       <Banner />
       <ShoppingListForm addItem={addItem} />
       {items && (
@@ -89,6 +89,6 @@ export const App = () => {
           handleClose={handleClose}
         />
       )}
-    </main>
+    </div>
   );
 };

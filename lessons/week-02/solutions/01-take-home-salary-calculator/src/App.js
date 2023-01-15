@@ -25,7 +25,7 @@ export const App = () => {
   };
 
   return (
-    <main className="container">
+    <div className="container">
       <Banner />
       <CalculatorForm calculate={calculate} setError={setError} />
       {error && (
@@ -34,6 +34,6 @@ export const App = () => {
         </div>
       )}
       {results && !error && <Results results={results} />}
-    </main>
+    </div>
   );
 };

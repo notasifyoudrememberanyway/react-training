@@ -35,10 +35,10 @@ export const App = () => {
   };
 
   return (
-    <main className="container">
+    <div className="container">
       <Banner />
       <ShoppingListForm handleAddItem={handleAddItem} />
       {items && <ShoppingList items={items} />}
-    </main>
+    </div>
   );
 };

@@ -42,7 +42,7 @@ As a user I should be able to determine my take home salary after income tax ded
   - Annual Salary
   - Taxable Income
   - Tax Percentage
-  - Taxed Payable
+  - Tax Payable
   - Take Home Salary
 - When the user clicks on the "Calculate" button without a valid gross salary then an error message must be displayed "Please complete the form!!"
 
