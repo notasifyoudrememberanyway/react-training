@@ -45,7 +45,7 @@ The lesson plan for the 3 weeks of React training is as follows:
 ### Day 1
 
 - [ ] Form submission
-- [ ] Random password generator challenge ⭐
+- [ ] Take home salary calculator challenge ⭐
 - [ ] Hooks - useEffect
 - [ ] API call using fetch
 - [ ] API call using axios

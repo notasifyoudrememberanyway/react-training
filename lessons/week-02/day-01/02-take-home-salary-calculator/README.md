@@ -18,9 +18,9 @@ As a user I should be able to determine my take home salary after income tax ded
 
 > Tax %: 40%
 
-> Tax: 40% of £37,500 = £13,125
+> Tax: 40% of £37,500 = £15,000
 
-> Take home salary: £50,000 - £13,125 = **£36,875**
+> Take home salary: £50,000 - £15,000 = **£35,000**
 
 **Example for 2022/2023**
 
@@ -30,9 +30,9 @@ As a user I should be able to determine my take home salary after income tax ded
 
 > Tax %: 35%
 
-> Tax: 35% of £37,500 = £15,000
+> Tax: 35% of £37,500 = £13,125
 
-> Take home salary: £50,000 - £15,000 = **£35,000**
+> Take home salary: £50,000 - £13,125 = **£36,875**
 
 ## Acceptance Criteria
 
