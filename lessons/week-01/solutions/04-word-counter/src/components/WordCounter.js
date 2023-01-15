@@ -15,13 +15,13 @@ export const WordCounter = () => {
   };
 
   return (
-    <div className="word-counter">
+    <section className="word-counter">
       <textarea
         rows={10}
         onChange={handleChange}
         placeholder="Enter your text here or copy and paste your text here..."
       ></textarea>
       <div className="info">Word count: {wordCount}</div>
-    </div>
+    </section>
   );
 };

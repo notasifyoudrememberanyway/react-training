@@ -3,7 +3,7 @@ import { Contacts } from "./Contacts";
 
 export const AboutMe = () => {
   return (
-    <div className="about-me" id="about-me">
+    <section className="about-me" id="about-me">
       <div className="container py-5">
         <div className="about-me-container">
           <div className="about-me-image">
@@ -35,6 +35,6 @@ export const AboutMe = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

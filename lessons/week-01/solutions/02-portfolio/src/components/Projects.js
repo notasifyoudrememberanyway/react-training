@@ -46,7 +46,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <div className="projects" id="projects">
+    <section className="projects" id="projects">
       <div className="container py-5">
         <h1 className="text-center">My Projects</h1>
         <h2 className="fs-5 text-center text-muted">
@@ -59,6 +59,6 @@ export const Projects = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
