@@ -38,9 +38,13 @@ As a user I should be able to determine my take home salary after income tax ded
 
 - User should be able to enter their gross salary
 - User should be able to select the tax year from a drop-down: 2021/2022 or 2022/2023
-- When the user clicks on the "Calculate" button then the results are displayed in a table
-- The results table should contain the following table headers
-- When the user clicks on the "Calculate" button without a valid gross salary then an error message must be displayed "Please enter a valid gross salary"
+- When the user clicks on the "Calculate" button then the results are displayed in a card with the following information:
+  - Annual Salary
+  - Taxable Income
+  - Tax Percentage
+  - Taxed Payable
+  - Take Home Salary
+- When the user clicks on the "Calculate" button without a valid gross salary then an error message must be displayed "Please complete the form!!"
 
 ## Technical Criteria
 
@@ -61,8 +65,18 @@ As a user I should be able to determine my take home salary after income tax ded
 
 Please use this high level wireframe as a guide for your portfolio and you are free to choose your own colours and/or layout if needed.
 
-![wireframe diagram](./take-home-salary-calculator.drawio.png)
+TODO
 
 ## Example Application
 
-![example application](./take-home-salary-calculator.png)
+### Initial Load
+
+![initial load](./on-load.png)
+
+### Valid Submission
+
+![valid submission](./valid-submission.png)
+
+### Error
+
+![error scenario](./error.png)
