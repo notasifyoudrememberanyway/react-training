@@ -9,17 +9,15 @@ As a user I should be able to search for information using the GitHub API.
 - User should be able to search for repositories for a valid organisation `https://api.github.com/orgs/{organisationName}/repos`
 - User should be able to search for repositories for a valid GitHub username `https://api.github.com/users/{username}/repos`
 - User is able to select either search by organisation name OR search by username. Use a radio button for this.
-- If user selects search by organisation name then the label should read "Organisation name" and placeholder should read "Please enter organisation name"
-- If user selects search by username name then the label should read "GitHub username" and placeholder should read "Please enter github username"
+- If user selects search by organisation name then the label should read "Organisation" and placeholder should read "Please enter valid organisation"
+- If user selects search by username name then the label should read "Username" and placeholder should read "Please enter valid username"
 - Form should have validation where organisation name or github username is required
 - Repositories should be presented as many cards keeping in mind responsive layouts
 - Each repository must be presented as a card with the following information:
   - Repo name
   - Repo url
   - Description
-  - GitHub username
   - User avatar
-  - Created at (formatted as "25th January, 2022 at 15:30")
 - If the number of repositories returned from the API is 0 then the user should be presented with an alert `"No repositories found."`
 
 ## Technical Criteria
@@ -38,7 +36,6 @@ As a user I should be able to search for information using the GitHub API.
 - You can choose a colour palette from [coolors](https://coolors.co/)
 - You can import [font-awesome icons](https://fontawesome.com/icons) using the [CDN](https://cdnjs.com/libraries/font-awesome)
 - Axios library [axios](https://www.npmjs.com/package/axios)
-- Date format library [date-fns](https://date-fns.org/)
 
 ## Wireframe Guide
 
@@ -48,4 +45,10 @@ TODO
 
 ## Example Application
 
-TODO
+### Initial Load
+
+![initial load](./initial-load.png)
+
+### Valid Search
+
+![valid search](./valid-search.png)
